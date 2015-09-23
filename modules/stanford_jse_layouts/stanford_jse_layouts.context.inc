@@ -2,8 +2,6 @@
 /**
  * @file
  * stanford_jse_layouts.context.inc
- * @author Shea McKinney <sheamck@stanford.edu>
- * @author Caryl Westerberg <cjwest@stanford.edu>
  */
 
 /**
@@ -57,8 +55,8 @@ function stanford_jse_layouts_context_default_contexts() {
   );
   $context->condition_mode = 0;
 
-// Translatables
-// Included for use with string extractors like potx.
+  // Translatables
+  // Included for use with string extractors like potx.
   t('Sitewide');
   t('Sitewide - All pages');
   $export['sitewide_jse'] = $context;
