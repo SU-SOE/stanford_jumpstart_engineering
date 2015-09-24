@@ -20,8 +20,8 @@ function stanford_jumpstart_engineering_form_alter(&$form, &$form_state, $form_i
         //'styles-dark' => "<span class=\"design-style ds-dark\">" . t('Dark') . "</span>",
         'styles-plain' => "<span class=\"design-style ds-plain\">" . t('Plain') . "</span>",
         'styles-rich' => "<span class=\"design-style ds-rich\">" . t('Rich') . "</span>",
-        'styles-bright' => "<span class=\"design-style ds-bright\">" . t('Bright') . "</span>",
-        //'styles-contrast' => "<span class=\"design-style ds-high\">" . t('High Contrast') . "</span>",
+        //'styles-bright' => "<span class=\"design-style ds-bright\">" . t('Bright') . "</span>",
+        'styles-contrast' => "<span class=\"design-style ds-high\">" . t('High Contrast') . "</span>",
         'styles-cardinal' => "<span class=\"design-style ds-cardinal\">" . t('Cardinal') . "</span>",
       ),
     );
