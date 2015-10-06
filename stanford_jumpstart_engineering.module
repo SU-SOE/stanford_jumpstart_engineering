@@ -10,11 +10,15 @@
  * Implements hook_form_alter().
  */
 function stanford_jumpstart_engineering_form_alter(&$form, &$form_state, $form_id) {
-  if($form_id == "system_theme_settings") {
+  if ($form_id == "system_theme_settings") {
+
+    $theme = variable_get("theme_default", "stanford_framework");
+    $style = theme_get_setting('styles', $theme);
+
     $form['design_container']['styles'] = array(
       '#type'          => 'radios',
       '#title'         => t('Choose styles'),
-      '#default_value' => theme_get_setting('styles'),
+      '#default_value' => $style,
       '#options'       => array(
         'styles-light' => "<span class=\"design-style ds-light\">" . t('Light') . "</span>",
         //'styles-dark' => "<span class=\"design-style ds-dark\">" . t('Dark') . "</span>",
@@ -26,4 +30,5 @@ function stanford_jumpstart_engineering_form_alter(&$form, &$form_state, $form_i
       ),
     );
   }
+
 }
