@@ -10,7 +10,7 @@
  * Implements hook_form_alter().
  */
 function stanford_jumpstart_engineering_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == "system_theme_settings") {
+  if ($form_id == "system_theme_settings" || $form_id == "stanford_jumpstart_homepage_dashboard_form") {
 
     $theme = variable_get("theme_default", "stanford_framework");
     $style = theme_get_setting('styles', $theme);
