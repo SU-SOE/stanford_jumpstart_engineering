@@ -44,6 +44,12 @@ function stanford_jse_layouts_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
+        'bean-jse-linked-logo-block' => array(
+          'module' => 'bean',
+          'delta' => 'jse-linked-logo-block',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
         'bean-jumpstart-footer-contact-block' => array(
           'module' => 'bean',
           'delta' => 'jumpstart-footer-contact-block',
