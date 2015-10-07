@@ -38,12 +38,6 @@ function stanford_jse_layouts_context_default_contexts() {
           'region' => 'search_box',
           'weight' => '-10',
         ),
-        'bean-jse-logo-block' => array(
-          'module' => 'bean',
-          'delta' => 'jse-logo-block',
-          'region' => 'footer',
-          'weight' => '-10',
-        ),
         'bean-jse-linked-logo-block' => array(
           'module' => 'bean',
           'delta' => 'jse-linked-logo-block',
