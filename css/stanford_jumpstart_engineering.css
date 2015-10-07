@@ -1,0 +1,6 @@
+/* CSS for Jumpstart Engineering */
+
+/* full width on banner images */
+.fullwidth .view-mode-stanford-full-width-banner-short img {
+	width: 100%;
+}
