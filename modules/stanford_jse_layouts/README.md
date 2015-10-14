@@ -1,7 +1,7 @@
 #Stanford Jumpstart Engineering (JSE) Layouts
 ##### Version: 7.x-1.0
 
-Maintainers: [sherakama](https://github.com/sherakama), [boznik](https://github.com/boznik), [cjwest](https://github.com/cjwest),
+Maintainers: [sherakama](https://github.com/sherakama), [boznik](https://github.com/boznik), and [cjwest](https://github.com/cjwest),
 [Changelog.txt](CHANGELOG.txt)
 
 This module provides defines layouts using contexts for JSE.
