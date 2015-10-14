@@ -9,7 +9,7 @@ The Stanford Engineering feature contains code for the JSE product. Current it i
 Sub Modules
 ---
 
-**[Stanford Jumpstart Engineering Layouts]**
+**[Stanford Jumpstart Engineering Layouts](https://github.com/SU-SOE/stanford_jumpstart_engineering/tree/7.x-1.x/modules/stanford_jse_layouts)**
 This module provides the sitewide layouts (contexts) for JSE pages.
 
 Installation
