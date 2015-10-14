@@ -1,17 +1,16 @@
-#[Stanford Engineering](https://github.com/SU-SWS/stanford_jumpstart_engineering)
+#[Stanford Jumpstart Engineering](https://github.com/SU-SWS/stanford_jumpstart_engineering)
 ##### Version: 7.x-1.0
 
 Maintainers: [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik), and [sherakama](https://github.com/sherakama)
 [Changelog.txt](CHANGELOG.txt)
 
-The Stanford Engineering feature is used to ...
-
+The Stanford Engineering feature contains code for the JSE product. Current it is a container for other sub modules but will be the place for future additions outside of the installation profile.
 
 Sub Modules
 ---
 
-**[Stanford Engineering Sub Module](https://github.com/SU-SWS/stanford_jumpstart_engineering)**
-This module provides the Stanford Person entity reference field. By default an instance of this field is created on Stanford Publications but it may be added to other content types.
+**[Stanford Jumpstart Engineering Layouts]**
+This module provides the sitewide layouts (contexts) for JSE pages.
 
 Installation
 ---
