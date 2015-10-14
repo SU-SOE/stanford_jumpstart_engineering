@@ -1,7 +1,7 @@
 #[Stanford Engineering](https://github.com/SU-SWS/stanford_jumpstart_engineering)
-##### Version: 7.x-1.x
+##### Version: 7.x-1.0
 
-Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)
+Maintainers: [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik), and [sherakama](https://github.com/sherakama)
 [Changelog.txt](CHANGELOG.txt)
 
 The Stanford Engineering feature is used to ...
