@@ -2,6 +2,7 @@
 ##### Version: 7.x-1.0
 
 Maintainers: [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik), and [sherakama](https://github.com/sherakama)
+
 [Changelog.txt](CHANGELOG.txt)
 
 The Stanford Engineering feature contains code for the JSE product. Current it is a container for other sub modules but will be the place for future additions outside of the installation profile.
