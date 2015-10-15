@@ -1,16 +1,11 @@
-#[Stanford Jumpstart Engineering](https://github.com/SU-SWS/stanford_jumpstart_engineering)
+#Stanford Jumpstart Engineering (JSE) Layouts
 ##### Version: 7.x-1.0
 
-Maintainers: [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik), and [sherakama](https://github.com/sherakama)
+Maintainers: [sherakama](https://github.com/sherakama), [boznik](https://github.com/boznik), and [cjwest](https://github.com/cjwest),
 [Changelog.txt](CHANGELOG.txt)
 
-The Stanford Engineering feature contains code for the JSE product. Current it is a container for other sub modules but will be the place for future additions outside of the installation profile.
+This module provides defines layouts using contexts for JSE.
 
-Sub Modules
----
-
-**[Stanford Jumpstart Engineering Layouts](https://github.com/SU-SOE/stanford_jumpstart_engineering/tree/7.x-1.x/modules/stanford_jse_layouts)**
-This module provides the sitewide layouts (contexts) for JSE pages.
 
 Installation
 ---
