@@ -1,0 +1,15 @@
+name = Stanford Sites Jumpstart Engineering Roles and Permissions
+description = Roles and permissions for the Stanford Sites Jumpstart Engineering service
+core = 7.x
+package = Stanford Sites Jumpstart Engineering
+version = 7.x-1.0
+project = stanford_jse_roles
+
+dependencies[] = stanford_private_page
+
+features[features_api][] = api:2
+features[user_permission][] = create stanford_private_page content
+features[user_permission][] = delete any stanford_private_page content
+features[user_permission][] = delete own stanford_private_page content
+features[user_permission][] = edit any stanford_private_page content
+features[user_permission][] = edit own stanford_private_page content
