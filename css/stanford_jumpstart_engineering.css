@@ -8,15 +8,21 @@
 
 /* SOE footer logo for cardinal style */
 
-.style-custom-styles-cardinal #block-bean-jse-linked-logo-block img {
+.style-custom-styles-cardinal #block-bean-jse-linked-logo-block img,
+.style-custom-styles-contrast #block-bean-jse-linked-logo-block img,
+.style-custom-styles-rich #block-bean-jse-linked-logo-block img {
   display: none;
 }
 
-.style-custom-styles-cardinal #block-bean-jse-linked-logo-block {
+.style-custom-styles-cardinal #block-bean-jse-linked-logo-block,
+.style-custom-styles-contrast #block-bean-jse-linked-logo-block,
+.style-custom-styles-rich #block-bean-jse-linked-logo-block {
   margin-top: 43px;
 }
 
-.style-custom-styles-cardinal #block-bean-jse-linked-logo-block p a {
+.style-custom-styles-cardinal #block-bean-jse-linked-logo-block p a,
+.style-custom-styles-contrast #block-bean-jse-linked-logo-block p a,
+.style-custom-styles-rich #block-bean-jse-linked-logo-block p a {
   background-image: url("../img/engineering-wordmark-white.png");
   background-position: 0 center;
   background-repeat: no-repeat;
@@ -24,19 +30,25 @@
 }
 
 @media (max-width: 1200px) {
-  .style-custom-styles-cardinal #block-bean-jse-linked-logo-block p a {
+  .style-custom-styles-cardinal #block-bean-jse-linked-logo-block p a,
+  .style-custom-styles-contrast #block-bean-jse-linked-logo-block p a,
+  .style-custom-styles-rich #block-bean-jse-linked-logo-block p a {
     background-size: 80%;
   }
 }
 
 @media (max-width: 980px) {
-  .style-custom-styles-cardinal #block-bean-jse-linked-logo-block p a {
+  .style-custom-styles-cardinal #block-bean-jse-linked-logo-block p a,
+  .style-custom-styles-contrast #block-bean-jse-linked-logo-block p a,
+  .style-custom-styles-rich #block-bean-jse-linked-logo-block p a {
     background-size: 60%;
   }
 }
 
 @media (max-width: 767px) {
-  .style-custom-styles-cardinal #block-bean-jse-linked-logo-block p a {
+  .style-custom-styles-cardinal #block-bean-jse-linked-logo-block p a,
+  .style-custom-styles-contrast #block-bean-jse-linked-logo-block p a,
+  .style-custom-styles-rich #block-bean-jse-linked-logo-block p a {
     padding-bottom: 10px;
   }
 }
