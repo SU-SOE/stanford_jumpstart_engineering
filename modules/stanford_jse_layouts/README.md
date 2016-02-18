@@ -1,5 +1,5 @@
 #Stanford Jumpstart Engineering (JSE) Layouts
-##### Version: 7.x-1.0
+##### Version: 7.x-1.0+16-dev
 
 Maintainers: [sherakama](https://github.com/sherakama), [boznik](https://github.com/boznik), and [cjwest](https://github.com/cjwest),
 [Changelog.txt](CHANGELOG.txt)

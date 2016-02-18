@@ -1,5 +1,12 @@
 Stanford Engineering
 
+Version 7.x-1.0+16-dev                                               2016-02-18
+--------------------------------------------------------------------------------
+- SOE-349: Added permissions for affiliated organizations.
+- added styles for soe logo for cardinal styles
+- added necessary media queries for responsiveness
+- styled for high contrast and rich styles
+
 Version 7.x-1.0+2-dev                                                 2015-10-21
 --------------------------------------------------------------------------------
 - Added stanford_jse_roles module
