@@ -52,3 +52,9 @@
     padding-bottom: 10px;
   }
 }
+
+/* SOE footer logo for cardinal style */
+
+.views-grid-four .views-row.views-row-even:nth-of-type(4n) {
+    margin-right: 0;
+}
