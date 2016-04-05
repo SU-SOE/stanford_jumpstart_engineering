@@ -53,8 +53,35 @@
   }
 }
 
-/* SOE footer logo for cardinal style */
+/* grouped grid layout for people */
 
-.views-grid-four .views-row.views-row-even:nth-of-type(4n) {
-    margin-right: 0;
+.views-grid-four .views-row.views-row-4,
+.views-grid-four .views-row.views-row-8,
+.views-grid-four .views-row.views-row-12,
+.views-grid-four .views-row.views-row-16,
+.views-grid-four .views-row.views-row-20,
+.views-grid-four .views-row.views-row-24,
+.views-grid-four .views-row.views-row-28,
+.views-grid-four .views-row.views-row-32,
+.views-grid-four .views-row.views-row-36,
+.views-grid-four .views-row.views-row-40,
+.views-grid-four .views-row.views-row-44,
+.views-grid-four .views-row.views-row-48,
+.views-grid-four .views-row.views-row-52,
+.views-grid-four .views-row.views-row-56,
+.views-grid-four .views-row.views-row-60,
+.views-grid-four .views-row.views-row-64,
+.views-grid-four .views-row.views-row-68,
+.views-grid-four .views-row.views-row-72,
+.views-grid-four .views-row.views-row-76,
+.views-grid-four .views-row.views-row-80,
+.views-grid-four .views-row.views-row-84,
+.views-grid-four .views-row.views-row-88,
+.views-grid-four .views-row.views-row-92,
+.views-grid-four .views-row.views-row-96,
+.views-grid-four .views-row.views-row-100,
+.views-grid-four .views-row.views-row-104,
+.views-grid-four .views-row.views-row-108,
+.views-grid-four .views-row.views-row-112 {
+    margin-right: 0px;
 }
