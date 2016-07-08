@@ -1,9 +1,13 @@
 Stanford Engineering
 
+
+Version 7.x-5.0                                                      2016-06-08
+--------------------------------------------------------------------------------
+- fixed layout issue on grid grouped people layout
+
 Version 7.x-5.x                                                      2016-04-13
 --------------------------------------------------------------------------------
-
-- Merged in the permissions from JSA Roles so that JSE Roles is an independant module
+- Merged in the permissions from JSA Roles so that JSE Roles is an independent module
 
 
 Version 7.x-1.0+16-dev                                               2016-02-18
