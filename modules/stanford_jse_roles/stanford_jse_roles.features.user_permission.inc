@@ -357,6 +357,13 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'clear stanford_event_importer feeds'.
+  $permissions['clear stanford_event_importer feeds'] = array(
+    'name' => 'clear stanford_event_importer feeds',
+    'roles' => array(),
+    'module' => 'feeds',
+  );
+
   // Exported permission: 'convert from stanford page to landing page'.
   $permissions['convert from stanford page to landing page'] = array(
     'name' => 'convert from stanford page to landing page',
@@ -1375,6 +1382,13 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
+  // Exported permission: 'import stanford_event_importer feeds'.
+  $permissions['import stanford_event_importer feeds'] = array(
+    'name' => 'import stanford_event_importer feeds',
+    'roles' => array(),
+    'module' => 'feeds',
+  );
+
   // Exported permission: 'jumpstart assign administrator role'.
   $permissions['jumpstart assign administrator role'] = array(
     'name' => 'jumpstart assign administrator role',
@@ -1521,6 +1535,13 @@ function stanford_jse_roles_user_default_permissions() {
       'site owner' => 'site owner',
     ),
     'module' => 'stanford_jumpstart_shortcuts',
+  );
+
+  // Exported permission: 'unlock stanford_event_importer feeds'.
+  $permissions['unlock stanford_event_importer feeds'] = array(
+    'name' => 'unlock stanford_event_importer feeds',
+    'roles' => array(),
+    'module' => 'feeds',
   );
 
   // Exported permission: 'use advanced search'.
