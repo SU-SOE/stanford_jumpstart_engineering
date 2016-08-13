@@ -106,6 +106,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'administer bean settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'bean',
   );
@@ -146,6 +147,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'administer blocks',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'block',
   );
@@ -182,7 +184,6 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'menu',
@@ -241,6 +242,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'administer private page settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'stanford_private_page',
   );
@@ -565,7 +567,6 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'create stanford_private_page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -728,6 +729,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_event content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -778,7 +780,6 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -789,6 +790,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_news_item content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -799,7 +801,6 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -810,6 +811,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_person content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -830,6 +832,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_publication content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -840,7 +843,6 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'administrator' => 'administrator',
-      'site owner' => 'site owner',
     ),
     'module' => 'node',
   );
@@ -870,6 +872,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete terms in stanford_affiliate_organization_type',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'taxonomy',
   );
@@ -879,6 +882,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete terms in stanford_affiliation',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'taxonomy',
   );
@@ -908,6 +912,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete terms in stanford_event_type',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'taxonomy',
   );
@@ -1116,6 +1121,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'metatag',
@@ -1169,6 +1175,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit own stanford_gallery content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -1190,6 +1197,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit own stanford_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -1211,6 +1219,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit own stanford_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -1274,6 +1283,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit terms in stanford_affiliate_organization_type',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'taxonomy',
   );
@@ -1283,6 +1293,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit terms in stanford_affiliation',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'taxonomy',
   );
@@ -1312,6 +1323,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit terms in stanford_event_type',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'taxonomy',
   );
@@ -1585,6 +1597,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'filter',
@@ -1637,6 +1650,8 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'view bean revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
     'module' => 'bean',
   );
