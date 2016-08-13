@@ -250,6 +250,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'administer redirects',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'redirect',
   );
