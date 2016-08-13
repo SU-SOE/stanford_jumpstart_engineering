@@ -359,6 +359,97 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'stanford_landing_page_node_convert',
   );
 
+  // Exported permission: 'convert from stanford_help_page'.
+  $permissions['convert from stanford_help_page'] = array(
+    'name' => 'convert from stanford_help_page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node_convert',
+  );
+
+  // Exported permission: 'convert from stanford_landing_page'.
+  $permissions['convert from stanford_landing_page'] = array(
+    'name' => 'convert from stanford_landing_page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node_convert',
+  );
+
+  // Exported permission: 'convert from stanford_page'.
+  $permissions['convert from stanford_page'] = array(
+    'name' => 'convert from stanford_page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node_convert',
+  );
+
+  // Exported permission: 'convert from stanford_private_page'.
+  $permissions['convert from stanford_private_page'] = array(
+    'name' => 'convert from stanford_private_page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node_convert',
+  );
+
+  // Exported permission: 'convert to stanford_help_page'.
+  $permissions['convert to stanford_help_page'] = array(
+    'name' => 'convert to stanford_help_page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node_convert',
+  );
+
+  // Exported permission: 'convert to stanford_landing_page'.
+  $permissions['convert to stanford_landing_page'] = array(
+    'name' => 'convert to stanford_landing_page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node_convert',
+  );
+
+  // Exported permission: 'convert to stanford_page'.
+  $permissions['convert to stanford_page'] = array(
+    'name' => 'convert to stanford_page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node_convert',
+  );
+
+  // Exported permission: 'convert to stanford_private_page'.
+  $permissions['convert to stanford_private_page'] = array(
+    'name' => 'convert to stanford_private_page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node_convert',
+  );
+
+  // Exported permission: 'create stanford_affiliate_organization content'.
+  $permissions['create stanford_affiliate_organization content'] = array(
+    'name' => 'create stanford_affiliate_organization content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create stanford_event content'.
   $permissions['create stanford_event content'] = array(
     'name' => 'create stanford_event content',
@@ -392,6 +483,16 @@ function stanford_jse_roles_user_default_permissions() {
   // Exported permission: 'create stanford_gallery content'.
   $permissions['create stanford_gallery content'] = array(
     'name' => 'create stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create stanford_help_page content'.
+  $permissions['create stanford_help_page content'] = array(
+    'name' => 'create stanford_help_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -441,6 +542,17 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create stanford_private_page content'.
+  $permissions['create stanford_private_page content'] = array(
+    'name' => 'create stanford_private_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create stanford_publication content'.
   $permissions['create stanford_publication content'] = array(
     'name' => 'create stanford_publication content',
@@ -460,6 +572,16 @@ function stanford_jse_roles_user_default_permissions() {
       'site owner' => 'site owner',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: 'delete any stanford_affiliate_organization content'.
+  $permissions['delete any stanford_affiliate_organization content'] = array(
+    'name' => 'delete any stanford_affiliate_organization content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any stanford_event content'.
@@ -494,6 +616,16 @@ function stanford_jse_roles_user_default_permissions() {
   // Exported permission: 'delete any stanford_gallery content'.
   $permissions['delete any stanford_gallery content'] = array(
     'name' => 'delete any stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any stanford_help_page content'.
+  $permissions['delete any stanford_help_page content'] = array(
+    'name' => 'delete any stanford_help_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -541,11 +673,32 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any stanford_private_page content'.
+  $permissions['delete any stanford_private_page content'] = array(
+    'name' => 'delete any stanford_private_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any stanford_publication content'.
   $permissions['delete any stanford_publication content'] = array(
     'name' => 'delete any stanford_publication content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own stanford_affiliate_organization content'.
+  $permissions['delete own stanford_affiliate_organization content'] = array(
+    'name' => 'delete own stanford_affiliate_organization content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -590,6 +743,16 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own stanford_help_page content'.
+  $permissions['delete own stanford_help_page content'] = array(
+    'name' => 'delete own stanford_help_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own stanford_landing_page content'.
   $permissions['delete own stanford_landing_page content'] = array(
     'name' => 'delete own stanford_landing_page content',
@@ -625,6 +788,16 @@ function stanford_jse_roles_user_default_permissions() {
   // Exported permission: 'delete own stanford_person content'.
   $permissions['delete own stanford_person content'] = array(
     'name' => 'delete own stanford_person content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own stanford_private_page content'.
+  $permissions['delete own stanford_private_page content'] = array(
+    'name' => 'delete own stanford_private_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -767,6 +940,17 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'edit any stanford_affiliate_organization content'.
+  $permissions['edit any stanford_affiliate_organization content'] = array(
+    'name' => 'edit any stanford_affiliate_organization content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any stanford_event content'.
   $permissions['edit any stanford_event content'] = array(
     'name' => 'edit any stanford_event content',
@@ -801,6 +985,17 @@ function stanford_jse_roles_user_default_permissions() {
   // Exported permission: 'edit any stanford_gallery content'.
   $permissions['edit any stanford_gallery content'] = array(
     'name' => 'edit any stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any stanford_help_page content'.
+  $permissions['edit any stanford_help_page content'] = array(
+    'name' => 'edit any stanford_help_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -853,6 +1048,17 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any stanford_private_page content'.
+  $permissions['edit any stanford_private_page content'] = array(
+    'name' => 'edit any stanford_private_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any stanford_publication content'.
   $permissions['edit any stanford_publication content'] = array(
     'name' => 'edit any stanford_publication content',
@@ -881,6 +1087,17 @@ function stanford_jse_roles_user_default_permissions() {
       'site owner' => 'site owner',
     ),
     'module' => 'metatag',
+  );
+
+  // Exported permission: 'edit own stanford_affiliate_organization content'.
+  $permissions['edit own stanford_affiliate_organization content'] = array(
+    'name' => 'edit own stanford_affiliate_organization content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own stanford_event content'.
@@ -924,6 +1141,17 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own stanford_help_page content'.
+  $permissions['edit own stanford_help_page content'] = array(
+    'name' => 'edit own stanford_help_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own stanford_landing_page content'.
   $permissions['edit own stanford_landing_page content'] = array(
     'name' => 'edit own stanford_landing_page content',
@@ -958,6 +1186,17 @@ function stanford_jse_roles_user_default_permissions() {
   // Exported permission: 'edit own stanford_person content'.
   $permissions['edit own stanford_person content'] = array(
     'name' => 'edit own stanford_person content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own stanford_private_page content'.
+  $permissions['edit own stanford_private_page content'] = array(
+    'name' => 'edit own stanford_private_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1313,6 +1552,17 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'advanced_help',
   );
 
+  // Exported permission: 'view any unpublished content'.
+  $permissions['view any unpublished content'] = array(
+    'name' => 'view any unpublished content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'view_unpublished',
+  );
+
   // Exported permission: 'view bean page'.
   $permissions['view bean page'] = array(
     'name' => 'view bean page',
@@ -1364,113 +1614,6 @@ function stanford_jse_roles_user_default_permissions() {
       'site owner' => 'site owner',
     ),
     'module' => 'system',
-  );
-
-  // Exported permission: 'create stanford_affiliate_organization content'.
-  $permissions['create stanford_affiliate_organization content'] = array(
-    'name' => 'create stanford_affiliate_organization content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create stanford_private_page content'.
-  $permissions['create stanford_private_page content'] = array(
-    'name' => 'create stanford_private_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any stanford_affiliate_organization content'.
-  $permissions['delete any stanford_affiliate_organization content'] = array(
-    'name' => 'delete any stanford_affiliate_organization content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any stanford_private_page content'.
-  $permissions['delete any stanford_private_page content'] = array(
-    'name' => 'delete any stanford_private_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own stanford_affiliate_organization content'.
-  $permissions['delete own stanford_affiliate_organization content'] = array(
-    'name' => 'delete own stanford_affiliate_organization content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own stanford_private_page content'.
-  $permissions['delete own stanford_private_page content'] = array(
-    'name' => 'delete own stanford_private_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any stanford_affiliate_organization content'.
-  $permissions['edit any stanford_affiliate_organization content'] = array(
-    'name' => 'edit any stanford_affiliate_organization content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any stanford_private_page content'.
-  $permissions['edit any stanford_private_page content'] = array(
-    'name' => 'edit any stanford_private_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own stanford_affiliate_organization content'.
-  $permissions['edit own stanford_affiliate_organization content'] = array(
-    'name' => 'edit own stanford_affiliate_organization content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own stanford_private_page content'.
-  $permissions['edit own stanford_private_page content'] = array(
-    'name' => 'edit own stanford_private_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
   );
 
   return $permissions;
