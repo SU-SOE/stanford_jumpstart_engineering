@@ -482,6 +482,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'create stanford_event_importer content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'node',
   );
@@ -615,6 +616,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete any stanford_event_importer content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'node',
   );
@@ -644,7 +646,6 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete any stanford_help_page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -736,6 +737,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_event_importer content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'node',
   );
@@ -765,7 +767,6 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_help_page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -996,6 +997,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit any stanford_event_importer content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'node',
   );
@@ -1145,6 +1147,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'edit own stanford_event_importer content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'node',
   );
