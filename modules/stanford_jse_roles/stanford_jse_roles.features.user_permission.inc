@@ -170,6 +170,16 @@ function stanford_jse_roles_user_default_permissions() {
     'module' => 'context_ui',
   );
 
+  // Exported permission: 'administer feeds'.
+  $permissions['administer feeds'] = array(
+    'name' => 'administer feeds',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'feeds',
+  );
+
   // Exported permission: 'administer filters'.
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
@@ -203,6 +213,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'administer meta tags',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'metatag',
   );
@@ -770,6 +781,7 @@ function stanford_jse_roles_user_default_permissions() {
     'name' => 'delete own stanford_help_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
