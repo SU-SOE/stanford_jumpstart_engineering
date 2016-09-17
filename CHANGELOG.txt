@@ -1,5 +1,12 @@
 Stanford Engineering
 
+Version 7.x-5.0+11-dev                                                    2016-06-08
+--------------------------------------------------------------------------------
+- Added site specific help block to jumpstart help page
+- update permissions:
+  - Editor can delete own help page,
+  - Site owner can administer meta-tags, event importers, and redirects
+  - Added missing taxonomy permissions
 
 Version 7.x-5.0                                                      2016-06-08
 --------------------------------------------------------------------------------
