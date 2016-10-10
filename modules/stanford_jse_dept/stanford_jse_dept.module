@@ -17,7 +17,6 @@
 function stanford_jse_dept_form_alter(&$form, &$form_state, $form_id) {
 
   if ($form_id == "system_theme_settings" || $form_id == "stanford_jumpstart_homepage_dashboard_form") {
-    dpm($form_id);
 
     drupal_add_css(drupal_get_path('module', 'stanford_jse_dept')
       . '/css/stanford_jse_dept.css');
