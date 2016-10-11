@@ -37,19 +37,12 @@ function stanford_jse_dept_form_alter(&$form, &$form_state, $form_id) {
  */
 function stanford_jse_dept_css_alter(&$css) {
   $styles = theme_get_setting('styles');
+  $fonts = theme_get_setting('fonts');
 
   // Styles variables.
   switch ($styles) {
-    case "styles-soe":
-      drupal_add_css(drupal_get_path('module', 'stanford_soe_helper') . '/css/soe_helper.css', array(
-        'group' => CSS_THEME,
-        'media' => 'all',
-        'weight' => 100,
-        'preprocess' => TRUE
-      ));
-
     case "styles-jse-dept":
-      drupal_add_css(drupal_get_path('module', 'stanford_soe_helper') . '/css/soe_helper.css', array(
+      drupal_add_css(drupal_get_path('module', 'stanford_jse_dept') . '/css/stanford_jse_dept_styles.css', array(
         'group' => CSS_THEME,
         'media' => 'all',
         'weight' => 100,
