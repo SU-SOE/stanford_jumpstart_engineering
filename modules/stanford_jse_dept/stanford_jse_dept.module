@@ -20,17 +20,13 @@ function stanford_jse_dept_form_alter(&$form, &$form_state, $form_id) {
 
     drupal_add_css(drupal_get_path('module', 'stanford_jse_dept') . '/css/stanford_jse_dept.css');
 
-    $theme = variable_get("theme_default", "stanford_framework");
-    $style = theme_get_setting('styles', $theme);
-
     //Add SoE font variables
     $form['design_container']['fonts']['#options']['fonts-jse-dept'] =
-      '<span class="design-font df-slab">' . t('SoE Department Slab Serif') . '</span>';
+      '<span class="design-font df-jse-dept">' . t('SoE Department') . '</span>';
 
     //Add JSE Department Styles
     $form['design_container']['styles']['#options']['styles-jse-dept'] =
       '<span class="design-style ds-jse-dept">' . t('SoE Department') . '</span>';
-
   }
 }
 
