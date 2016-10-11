@@ -12,8 +12,8 @@
 function stanford_jumpstart_engineering_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == "system_theme_settings" || $form_id == "stanford_jumpstart_homepage_dashboard_form") {
 
-    // Remove some of the styles
-    unset($form['design_container']['styles']['options']['styles-dark']);
-    unset($form['design_container']['styles']['options']['styles-bright']);
+    // Remove unneeded styles
+    unset($form['design_container']['styles']['#options']['styles-dark']);
+    unset($form['design_container']['styles']['#options']['styles-bright']);
   }
 }
