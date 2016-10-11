@@ -66,7 +66,7 @@ function stanford_jse_dept_css_alter(&$css) {
   // SoE fonts variables
   switch ($fonts) {
     case "fonts-jse-dept":
-      drupal_add_css(drupal_get_path('module', 'stanford_soe_helper') . '/css/soe_helper.css', array(
+      drupal_add_css(drupal_get_path('module', 'stanford_jse_dept') . '/css/stanford_jse_dept_fonts.css', array(
         'group' => CSS_THEME,
         'media' => 'all',
         'weight' => 98,

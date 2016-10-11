@@ -12,23 +12,8 @@
 function stanford_jumpstart_engineering_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == "system_theme_settings" || $form_id == "stanford_jumpstart_homepage_dashboard_form") {
 
-    $theme = variable_get("theme_default", "stanford_framework");
-    $style = theme_get_setting('styles', $theme);
-
-    $form['design_container']['styles'] = array(
-      '#type'          => 'radios',
-      '#title'         => t('Choose styles'),
-      '#default_value' => $style,
-      '#options'       => array(
-        'styles-light' => "<span class=\"design-style ds-light\">" . t('Light') . "</span>",
-        //'styles-dark' => "<span class=\"design-style ds-dark\">" . t('Dark') . "</span>",
-        'styles-plain' => "<span class=\"design-style ds-plain\">" . t('Plain') . "</span>",
-        'styles-rich' => "<span class=\"design-style ds-rich\">" . t('Rich') . "</span>",
-        //'styles-bright' => "<span class=\"design-style ds-bright\">" . t('Bright') . "</span>",
-        'styles-contrast' => "<span class=\"design-style ds-high\">" . t('High Contrast') . "</span>",
-        'styles-cardinal' => "<span class=\"design-style ds-cardinal\">" . t('Cardinal') . "</span>",
-      ),
-    );
+    // Remove some of the styles
+    unset($form['design_container']['styles']['options']['styles-dark']);
+    unset($form['design_container']['styles']['options']['styles-bright']);
   }
-
 }
