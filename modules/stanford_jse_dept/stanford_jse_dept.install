@@ -37,6 +37,15 @@ function stanford_jse_dept_enable() {
  * Implements hook_disable().
  */
 function stanford_jse_dept_disable() {
+  // Reset the theme settings
+  $theme_settings = variable_get('theme_stanford_framework_settings', array());
+  $theme_settings['fonts'] = 'fonts-sans';
+  $theme_settings['styles'] = 'styles-light';
+
+  variable_set('theme_stanford_framework_settings', $theme_settings);
+
+  drupal_set_message('Reset design options to font: Sans Serif and style: Light', 'status');
+
   /*
    *mymodule_cache_rebuild();
    */
