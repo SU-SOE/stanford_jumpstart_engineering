@@ -1,4 +1,4 @@
-#[Stanford Jumpstart Engineering Department Fonts](https://github.com/SU-SWS/stanford_jumpstart_engineering)
+#[Stanford Jumpstart Engineering Department](https://github.com/SU-SWS/stanford_jumpstart_engineering)
 ##### Version: 7.x-1.x
 
 Maintainers: [sherakama](https://github.com/sherakama), [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik)
@@ -14,7 +14,7 @@ Install this module like any other module. [See Drupal Documentation](https://dr
 Configuration
 ---
 
-Nothing special needed.
+This module is dependent on Stanford Framework theme.
 
 Troubleshooting
 ---

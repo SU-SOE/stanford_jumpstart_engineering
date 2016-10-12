@@ -42,6 +42,7 @@ function stanford_jse_dept_css_alter(&$css) {
   // Styles variables.
   switch ($styles) {
     case "styles-jse-dept":
+      drupal_add_css(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_light/styles-light.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => 100, 'preprocess' => TRUE));
       drupal_add_css(drupal_get_path('module', 'stanford_jse_dept') . '/css/stanford_jse_dept_styles.css', array(
         'group' => CSS_THEME,
         'media' => 'all',
