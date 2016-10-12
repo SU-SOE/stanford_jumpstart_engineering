@@ -2,5 +2,10 @@
 
 /* ADD GOOGLE ROBOTO SLAB FONT */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100); */
 
+/* SUBNAVIGATION */
+
+.sidebar .block-menu-block .menu-block-wrapper > .menu > li > a {
+    font-weight: 400;
+}
