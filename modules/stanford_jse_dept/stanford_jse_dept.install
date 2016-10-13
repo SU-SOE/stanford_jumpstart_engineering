@@ -32,8 +32,8 @@ function stanford_jse_dept_enable() {
 
   // Archive the current settings
   $theme_settings = variable_get('theme_stanford_framework_settings', array());
-  $db['stanford_jse_dept_settings']['fonts'] = $theme_settings['fonts'];
-  $db['stanford_jse_dept_settings']['styles'] = $theme_settings['styles'];
+  $db['fonts'] = $theme_settings['fonts'];
+  $db['styles'] = $theme_settings['styles'];
   variable_set('stanford_jse_dept_settings', $db);
 
   // Set the new as default
@@ -41,8 +41,6 @@ function stanford_jse_dept_enable() {
   $theme_settings['styles'] = 'styles-jse-dept';
 
   variable_set('theme_stanford_framework_settings', $theme_settings);
-
-  drupal_set_message('Set custom design options', 'status');
 }
 
 /**
@@ -58,9 +56,6 @@ function stanford_jse_dept_disable() {
 
   variable_set('theme_stanford_framework_settings', $theme_settings);
   variable_del('stanford_jse_dept_settings');
-
-  drupal_set_message('Reset custom design options', 'status');
-
 }
 
 /**
