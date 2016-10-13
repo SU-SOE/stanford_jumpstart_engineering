@@ -54,7 +54,7 @@ function stanford_jse_dept_disable() {
   $db = variable_get('stanford_jse_dept_settings');
   $theme_settings = variable_get('theme_stanford_framework_settings', array());
   $theme_settings['fonts'] = $db['fonts'];
-  $theme_settings['styles'] = $db['styles]';
+  $theme_settings['styles'] = $db['styles'];
 
   variable_set('theme_stanford_framework_settings', $theme_settings);
   variable_del('stanford_jse_dept_settings');
