@@ -27,29 +27,40 @@ function stanford_jse_dept_install() {
  * Implements hook_enable().
  */
 function stanford_jse_dept_enable() {
-  /*
-   *mymodule_cache_rebuild();
-   */
-  /* Your code here */
+
+  $db = variable_get('stanford_jse_dept_settings');
+
+  // Archive the current settings
+  $theme_settings = variable_get('theme_stanford_framework_settings', array());
+  $db['stanford_jse_dept_settings']['fonts'] = $theme_settings['fonts'];
+  $db['stanford_jse_dept_settings']['styles'] = $theme_settings['styles'];
+  variable_set('stanford_jse_dept_settings', $db);
+
+  // Set the new as default
+  $theme_settings['fonts'] = 'fonts-jse-dept';
+  $theme_settings['styles'] = 'styles-jse-dept';
+
+  variable_set('theme_stanford_framework_settings', $theme_settings);
+
+  drupal_set_message('Set custom design options', 'status');
 }
 
 /**
  * Implements hook_disable().
  */
 function stanford_jse_dept_disable() {
+
   // Reset the theme settings
+  $db = variable_get('stanford_jse_dept_settings');
   $theme_settings = variable_get('theme_stanford_framework_settings', array());
-  $theme_settings['fonts'] = 'fonts-sans';
-  $theme_settings['styles'] = 'styles-light';
+  $theme_settings['fonts'] = $db['fonts'];
+  $theme_settings['styles'] = $db['styles]';
 
   variable_set('theme_stanford_framework_settings', $theme_settings);
+  variable_del('stanford_jse_dept_settings');
 
-  drupal_set_message('Reset design options to font: Sans Serif and style: Light', 'status');
+  drupal_set_message('Reset custom design options', 'status');
 
-  /*
-   *mymodule_cache_rebuild();
-   */
-  /* Your code here */
 }
 
 /**
