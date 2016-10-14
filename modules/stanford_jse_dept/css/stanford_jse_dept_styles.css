@@ -91,10 +91,72 @@
     background: #fff;
 }
 
+/* BUTTON LINK STYLES */
+
+#content-body .content a.btn {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 480px) {
+    #content-body .content a.btn {
+        width: 65%;
+    }
+}
+
+
+/* AFTER CONTENT FOR HEADING LINKS */
+
+#content .content-body .field-name-body h2 a:after,
+#content .content-body .field-name-body h3 a:after,
+#content .content-body .field-name-body h4 a:after,
+#content .content-body .field-name-body h5 a:after,
+#content .content-body .field-name-body h6 a:after {
+    content: " >";
+    vertical-align: middle;
+}
+
+.node-type-webform textarea {
+    height: 100px;
+}
+
+/* LISTS */
+
+ul.pager li a {
+    border: 1px solid #d6d6d6;
+    background: #fff;
+    margin-bottom: 12px;
+    margin-right: 4px;
+    font-size: .9em;
+}
+
+ul.pager li a:hover,
+ul.pager li a:focus,
+ul.pager li.pager-current {
+    margin-right: 4px;
+    font-weight: 300;
+}
+
+.views-row-lines .views-row-1 {
+    border-top: 1px solid #d6d6d6;
+}
+
+.views-row-lines .views-row {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.node-type-stanford-landing-page .view-mode-stanford_medium_square {
+    border-top: 1px solid #d6d6d6;
+}
+
+
 /* FOOTER */
 
 .site-footer {
     border-top: 1px solid #d6d6d6;
     background: #fff;
 }
+
 
