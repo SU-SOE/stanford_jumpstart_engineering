@@ -15,5 +15,6 @@ function stanford_jumpstart_engineering_form_alter(&$form, &$form_state, $form_i
     // Remove unneeded styles
     unset($form['design_container']['styles']['#options']['styles-dark']);
     unset($form['design_container']['styles']['#options']['styles-bright']);
+    unset($form['design_container']['styles']['#options']['styles-vivid']);
   }
 }
