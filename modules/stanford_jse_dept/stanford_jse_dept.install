@@ -1,0 +1,70 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_install().
+ */
+function stanford_jse_dept_install() {
+  // Populate the default {node_access} record.
+  /*
+   *db_insert('node_access')
+   *  ->fields(array(
+   *    'nid' => 0,
+   *    'gid' => 0,
+   *    'realm' => 'all',
+   *    'grant_view' => 1,
+   *    'grant_update' => 0,
+   *    'grant_delete' => 0,
+   *  ))
+   *  ->execute();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_enable().
+ * This archives the current settings for fonts and styles
+ */
+function stanford_jse_dept_enable() {
+
+  $db = variable_get('stanford_jse_dept_settings');
+
+  // Archive the current settings
+  $theme_settings = variable_get('theme_stanford_framework_settings', array());
+  $db['fonts'] = $theme_settings['fonts'];
+  $db['styles'] = $theme_settings['styles'];
+  variable_set('stanford_jse_dept_settings', $db);
+
+  // Set the new as default
+  $theme_settings['fonts'] = 'fonts-jse-dept';
+  $theme_settings['styles'] = 'styles-jse-dept';
+
+  variable_set('theme_stanford_framework_settings', $theme_settings);
+}
+
+/**
+ * Implements hook_disable().
+ * This restores the previous settings for fonts and styles
+ */
+function stanford_jse_dept_disable() {
+
+  // Reset the theme settings
+  $db = variable_get('stanford_jse_dept_settings');
+  $theme_settings = variable_get('theme_stanford_framework_settings', array());
+  $theme_settings['fonts'] = $db['fonts'];
+  $theme_settings['styles'] = $db['styles'];
+
+  variable_set('theme_stanford_framework_settings', $theme_settings);
+  variable_del('stanford_jse_dept_settings');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function stanford_jse_dept_uninstall() {
+  /*
+   *variable_del('upload_file_types');
+   */
+}
