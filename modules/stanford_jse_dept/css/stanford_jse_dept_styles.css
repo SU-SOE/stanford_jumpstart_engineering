@@ -94,7 +94,7 @@
 /* BUTTON LINK STYLES */
 
 #content-body .content a.btn {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     width: 30%;
     margin-bottom: 40px;
