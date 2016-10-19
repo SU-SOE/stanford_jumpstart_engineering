@@ -1,5 +1,11 @@
 Stanford Engineering
 
+Version 7.x-5.2 (Department sites)                                    2016-10-19
+--------------------------------------------------------------------------------
+- Added submodule for department site specific items including
+  - New stylesheets for fonts and styles
+  - Alter which adds a new font and style to the Customize Design form
+
 Version 7.x-5.1                                                       2016-06-08
 --------------------------------------------------------------------------------
 
