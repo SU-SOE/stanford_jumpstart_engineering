@@ -6,27 +6,25 @@
 /**
  * Implements hook_install().
  */
-function stanford_module_install() {
-  // Populate the default {node_access} record.
-  /*
-   *db_insert('node_access')
-   *  ->fields(array(
-   *    'nid' => 0,
-   *    'gid' => 0,
-   *    'realm' => 'all',
-   *    'grant_view' => 1,
-   *    'grant_update' => 0,
-   *    'grant_delete' => 0,
-   *  ))
-   *  ->execute();
-   */
-  /* Your code here */
-}
+function stanford_jse_related_content_install() {
+  // Install default block classes.
+  $values = array(
+    // Filtered upcoming events
+    array("views","-b0b97e4fb54df88f280eb220fef1829e","well span4"),
+  );
+
+  foreach ($values as $k => $value) {
+    $update = db_update('block')->fields(array('css_class' => $value[2]));
+    $update->condition('module',$value[0]);
+    $update->condition('delta',$value[1]);
+    $update->execute();
+  }
+ }
 
 /**
  * Implements hook_enable().
  */
-function stanford_module_enable() {
+function stanford_jse_related_content_enable() {
   /*
    *mymodule_cache_rebuild();
    */
@@ -36,7 +34,7 @@ function stanford_module_enable() {
 /**
  * Implements hook_disable().
  */
-function stanford_module_disable() {
+function stanford_jse_related_content_disable() {
   /*
    *mymodule_cache_rebuild();
    */
@@ -46,7 +44,7 @@ function stanford_module_disable() {
 /**
  * Implements hook_uninstall().
  */
-function stanford_module_uninstall() {
+function stanford_jse_related_content_uninstall() {
   /*
    *variable_del('upload_file_types');
    */
