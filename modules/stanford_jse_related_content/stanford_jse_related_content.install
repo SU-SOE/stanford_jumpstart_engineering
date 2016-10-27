@@ -19,7 +19,7 @@ function stanford_jse_related_content_install() {
     $update->condition('delta',$value[1]);
     $update->execute();
   }
- }
+}
 
 /**
  * Implements hook_enable().
