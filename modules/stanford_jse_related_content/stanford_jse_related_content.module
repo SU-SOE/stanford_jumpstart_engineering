@@ -1,8 +1,33 @@
 <?php
 /**
  * @file
- * File description
- *
- * Long description
+ * Code for the Stanford Jumpstart Engineering Related Content feature.
  */
+
+include_once 'stanford_jse_related_content.features.inc';
+/**
+ * Implements hook_page_build().
+ */
+function stanford_jse_related_content_page_build(&$page) {
+  $node = menu_get_object();
+
+  if ($node->type == 'stanford_page') {
+    $block = block_load('views', 'e1db4622d5599968122994300d2a6f47');
+
+    if (isset($block)) {
+      // Render the content and subject for the block.
+      $blocks = _block_render_blocks(array($block));
+      // Get an array of blocks suitable for drupal_render().
+      $array = _block_get_renderable_array($blocks);
+
+      $region = 'sidebar_second';
+      if (isset($page[$region])) {
+        $page[$region] = array_merge($page[$region], $array);
+      }
+      else {
+        $page[$region] = $array;
+      }
+    }
+  }
+}
 

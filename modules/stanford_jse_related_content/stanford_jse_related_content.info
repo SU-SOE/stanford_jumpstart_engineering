@@ -3,6 +3,7 @@ description = The Stanford Jumpstart Engineering Related Content feature is used
 core = 7.x
 package = Stanford
 version = 7.x-1.0-dev
+project = stanford_jse_related_content
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = features
@@ -16,5 +17,4 @@ features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 files[] = stanford_jse_related_content.install
-
-
+project status url = https://github.com/SU-SOE/stanford_jumpstart_engineering.git
