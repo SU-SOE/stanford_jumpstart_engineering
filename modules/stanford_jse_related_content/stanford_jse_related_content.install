@@ -7,11 +7,27 @@
  * Implements hook_install().
  */
 function stanford_jse_related_content_install() {
+
+  // Add block in site-wide context.
+  // see http://dropbucket.org/node/1461.
+  $context = module_invoke('context', 'load', 'stanford_page_related_content');
+
+  $block_filtered_news = array(
+    'module' => 'views',
+    'delta' => 'e1db4622d5599968122994300d2a6f47',
+    'region' => 'sidebar_second',
+    'weight' => 0,
+  );
+  $context->reactions['block']['blocks']['views-e1db4622d5599968122994300d2a6f47']
+    = $block_filtered_news;
+
+  module_invoke('context', 'save', $context);
+
   // Install default block classes.
-  dsm("in stanford_jse_related_content_install()");
   $values = array(
     // Filtered upcoming events
-    array("views","-b0b97e4fb54df88f280eb220fef1829e","well span4"),
+    array("views","b0b97e4fb54df88f280eb220fef1829e","well"),
+    array("views","e1db4622d5599968122994300d2a6f47","well"),
   );
 
   foreach ($values as $k => $value) {
