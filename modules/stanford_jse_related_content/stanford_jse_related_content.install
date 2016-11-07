@@ -8,7 +8,7 @@
  */
 function stanford_jse_related_content_install() {
 
-  // Add block in site-wide context.
+  // Add block into context.
   // see http://dropbucket.org/node/1461.
   $context = module_invoke('context', 'load', 'stanford_page_related_content');
 
