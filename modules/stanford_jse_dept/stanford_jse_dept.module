@@ -52,7 +52,7 @@ function stanford_jse_dept_css_alter(&$css) {
         '/css/stanford_jse_dept_styles.css', array(
           'group' => CSS_THEME,
           'media' => 'all',
-          'weight' => 100,
+          'weight' => 120,
           'preprocess' => TRUE,
       ));
       break;
@@ -72,7 +72,7 @@ function stanford_jse_dept_css_alter(&$css) {
         '/css/stanford_jse_dept_fonts.css', array(
           'group' => CSS_THEME,
           'media' => 'all',
-          'weight' => 100,
+          'weight' => 120,
           'preprocess' => TRUE
       ));
       break;
