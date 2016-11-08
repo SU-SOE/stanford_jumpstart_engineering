@@ -29,6 +29,14 @@ function stanford_jse_related_content_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        /*
+        'views-d6a08df010339ebc8df9db319eb2052c' => array(
+          'module' => 'views',
+          'delta' => 'd6a08df010339ebc8df9db319eb2052c',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        */
         'views-b0b97e4fb54df88f280eb220fef1829e' => array(
           'module' => 'views',
           'delta' => 'b0b97e4fb54df88f280eb220fef1829e',
