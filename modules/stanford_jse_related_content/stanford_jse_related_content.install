@@ -7,7 +7,7 @@
  * Implements hook_install().
  */
 function stanford_jse_related_content_install() {
-
+/* todo
   // Add blocks into context.
   // Add these blocks through the install because they compete with other blocks.
   // see http://dropbucket.org/node/1461.
@@ -63,6 +63,18 @@ function stanford_jse_related_content_install() {
     module_invoke('context', 'save', $context);
   }
 
+*/
+
+}
+
+/**
+ * Implements hook_enable().
+ */
+function stanford_jse_related_content_enable() {
+  /*
+   *mymodule_cache_rebuild();
+   */
+  /* Your code here */
   // Install default block classes.
   $values = array(
     // Filtered upcoming events
@@ -78,16 +90,6 @@ function stanford_jse_related_content_install() {
     $update->condition('delta',$value[1]);
     $update->execute();
   }
-}
-
-/**
- * Implements hook_enable().
- */
-function stanford_jse_related_content_enable() {
-  /*
-   *mymodule_cache_rebuild();
-   */
-  /* Your code here */
 }
 
 /**

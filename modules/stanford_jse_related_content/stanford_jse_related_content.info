@@ -20,6 +20,7 @@ dependencies[] = stanford_related_page
 dependencies[] = stanford_related_person
 dependencies[] = strongarm
 dependencies[] = views
+features[context][] = news_related_content
 features[context][] = stanford_page_related_content
 features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
