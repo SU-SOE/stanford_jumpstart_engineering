@@ -7,63 +7,6 @@
  * Implements hook_install().
  */
 function stanford_jse_related_content_install() {
-/* todo
-  // Add blocks into context.
-  // Add these blocks through the install because they compete with other blocks.
-  // see http://dropbucket.org/node/1461.
-
-  // load the related context for the Stanford Page
-  $context = module_invoke('context', 'load', 'stanford_page_related_content');
-
-  // Add the filtered News view to the Stanford Page
-  if (!isset($context->reactions['block']['blocks']['views-e1db4622d5599968122994300d2a6f47'])) {
-
-    $block_filtered_news = array(
-      'module' => 'views',
-      'delta' => 'e1db4622d5599968122994300d2a6f47',
-      'region' => 'sidebar_second',
-      'weight' => 0,
-    );
-    $context->reactions['block']['blocks']['views-e1db4622d5599968122994300d2a6f47']
-      = $block_filtered_news;
-
-    module_invoke('context', 'save', $context);
-  }
-
-  // Add the filtered News extras 3 item view to the Stanford Page
-  if (!isset ($context->reactions['block']['blocks']['views-d6a08df010339ebc8df9db319eb2052c'])) {
-
-    $block_filtered_news = array(
-      'module' => 'views',
-      'delta' => 'd6a08df010339ebc8df9db319eb2052c',
-      'region' => 'sidebar_second',
-      'weight' => -10,
-    );
-    $context->reactions['block']['blocks']['views-d6a08df010339ebc8df9db319eb2052c']
-      = $block_filtered_news;
-
-    module_invoke('context', 'save', $context);
-  }
-
-  // Load the news context
-  if (!isset($context->reactions['block']['blocks']['views-b9c01c6eb8df3ae2f662a9d4a0e35311'])) {
-
-    $context = module_invoke('context', 'load', 'news');
-
-    // Add the exposed filter for News Extras view to the news listing (landing) page
-    $block_exposed_filter_news = array(
-      'module' => 'views',
-      'delta' => 'b9c01c6eb8df3ae2f662a9d4a0e35311',
-      'region' => 'sidebar_first',
-      'weight' => -10,
-    );
-    $context->reactions['block']['blocks']['views-b9c01c6eb8df3ae2f662a9d4a0e35311']
-      = $block_exposed_filter_news;
-
-    module_invoke('context', 'save', $context);
-  }
-
-*/
 
 }
 
@@ -71,25 +14,7 @@ function stanford_jse_related_content_install() {
  * Implements hook_enable().
  */
 function stanford_jse_related_content_enable() {
-  /*
-   *mymodule_cache_rebuild();
-   */
-  /* Your code here */
-  // Install default block classes.
-  $values = array(
-    // Filtered upcoming events
-    array("views","b0b97e4fb54df88f280eb220fef1829e","well"),
-    array("views","e1db4622d5599968122994300d2a6f47","well"),
-    array("views","d6a08df010339ebc8df9db319eb2052c","well"),
-    array("views","b9c01c6eb8df3ae2f662a9d4a0e35311","well"),
-  );
 
-  foreach ($values as $k => $value) {
-    $update = db_update('block')->fields(array('css_class' => $value[2]));
-    $update->condition('module',$value[0]);
-    $update->condition('delta',$value[1]);
-    $update->execute();
-  }
 }
 
 /**
@@ -106,26 +31,5 @@ function stanford_jse_related_content_disable() {
  * Implements hook_uninstall().
  */
 function stanford_jse_related_content_uninstall() {
-  // Remove all the blocks added during install.
-
-  /*
-  $context = module_invoke('context', 'load', 'stanford_page_related_content');
-
-  // Unset the filtered News view to the Stanford Page
-  unset($context->reactions['block']['blocks']['views-e1db4622d5599968122994300d2a6f47']);
-
-  // Unset the filtered News extras 3 item view to the Stanford Page
-  unset($context->reactions['block']['blocks']['views-d6a08df010339ebc8df9db319eb2052c']);
-
-  module_invoke('context', 'save', $context);
-
-  // Load the news context
-  $context = module_invoke('context', 'load', 'news');
-
-  // Unset the filtered News extras 3 item view to the Stanford Page
-  unset($context->reactions['block']['blocks']['views-b9c01c6eb8df3ae2f662a9d4a0e35311']);
-
-  module_invoke('context', 'save', $context);
-  */
 
 }
