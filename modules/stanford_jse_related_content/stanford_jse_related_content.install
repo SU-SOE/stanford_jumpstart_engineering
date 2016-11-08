@@ -12,6 +12,7 @@ function stanford_jse_related_content_install() {
   // Add these blocks through the install because they compete with other blocks.
   // see http://dropbucket.org/node/1461.
 
+  // load the related context for the Stanford Page
   $context = module_invoke('context', 'load', 'stanford_page_related_content');
 
   // Add the filtered News view to the Stanford Page
@@ -34,6 +35,9 @@ function stanford_jse_related_content_install() {
   $context->reactions['block']['blocks']['views-d6a08df010339ebc8df9db319eb2052c']
     = $block_filtered_news;
 
+  module_invoke('context', 'save', $context);
+
+  // Load the news context
   $context = module_invoke('context', 'load', 'news');
 
   // Add the exposed filter for News Extras view to the news listing (landing) page
