@@ -2,7 +2,7 @@
 
 /* ADD GOOGLE ROBOTO SLAB FONT */
 
-/* @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100); */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
 
 .sidebar .block-menu-block .menu-block-wrapper > .menu > li > a {
     font-weight: 400;
@@ -166,6 +166,15 @@ textarea {
     line-height: 1.2em;
 }
 */
+h3.block-item-title.news {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+h3.block-item-title a:hover {
+    text-decoration:underline;
+}
+
 .postcard-left {
     margin-top: 6px;
 }
