@@ -4,8 +4,9 @@ core = 7.x
 package = Stanford
 version = 7.x-5.2-dev
 project = stanford_jumpstart_engineering
-; dependencies[] = block
+dependencies[] = stanford_jse_related_content
 ; stylesheets[all][] = css/stanford_module.css
 ; scripts[] = js/stanford_module.js
 project status url = https://github.com/SU-SWS/stanford_jumpstart_engineering
 files[] = stanford_jse_dept.install
+

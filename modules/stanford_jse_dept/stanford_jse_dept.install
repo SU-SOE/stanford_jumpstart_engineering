@@ -33,21 +33,35 @@ function stanford_jse_dept_enable() {
   // Set the contexts for department sites.
   $context_status = variable_get('context_status', array());
 
-  // Archive the context settings.
-  $db['context_status']['stanford_extras_single_region']
-    = $context_status['stanford_extras_single_region'];
-  $db['context_status']['all_pages_but_homepage_soe']
-    = $context_status['all_pages_but_homepage_soe'];
-  $db['context_status']['stanford_news_extras']
-    = $context_status['stanford_news_extras'];
-  $db['context_status']['soe_news']
-    = $context_status['soe_news'];
-  $db['context_status']['all_pages_but_homepage_jsa']
-    = $context_status['all_pages_but_homepage_jsa'];
-  $db['context_status']['news_pages']
-    = $context_status['news_pages'];
-  $db['context_status']['news']
-    = $context_status['news'];
+  // Archive the current context settings.
+  if (isset($context_status['stanford_extras_single_region'])) {
+    $db['context_status']['stanford_extras_single_region']
+      = $context_status['stanford_extras_single_region'];
+  }
+  if (isset($context_status['all_pages_but_homepage_soe'])) {
+    $db['context_status']['all_pages_but_homepage_soe']
+      = $context_status['all_pages_but_homepage_soe'];
+  }
+  if (isset($context_status['stanford_news_extras'])) {
+    $db['context_status']['stanford_news_extras']
+      = $context_status['stanford_news_extras'];
+  }
+  if (isset($context_status['soe_news'])) {
+    $db['context_status']['soe_news']
+      = $context_status['soe_news'];
+  }
+  if (isset($context_status['all_pages_but_homepage_jsa'])) {
+    $db['context_status']['all_pages_but_homepage_jsa']
+      = $context_status['all_pages_but_homepage_jsa'];
+  }
+  if (isset($context_status['news_pages'])) {
+    $db['context_status']['news_pages']
+      = $context_status['news_pages'];
+  }
+  if (isset($context_status['news'])) {
+    $db['context_status']['news']
+      = $context_status['news'];
+  }
 
   // Set the contexts for department sites
   $context_status['stanford_extras_single_region'] = FALSE;
@@ -84,18 +98,31 @@ function stanford_jse_dept_disable() {
   $context_status = variable_get('context_status', array());
 
   // Revert the contexts.
-  $context_status['stanford_extras_single_region']
-    = $db['context_status']['stanford_extras_single_region'];
-  $context_status['news'] = $db['context_status']['news'];
-  $context_status['all_pages_but_homepage_soe']
+  if (isset($db['context_status']['stanford_extras_single_region'])) {
+    $context_status['stanford_extras_single_region']
+      = $db['context_status']['stanford_extras_single_region'];
+  }
+  if (isset($db['context_status']['news'])) {
+    $context_status['news'] = $db['context_status']['news'];
+  }
+  if (isset($db['context_status']['all_pages_but_homepage_soe'])) {
+    $context_status['all_pages_but_homepage_soe']
     = $db['context_status']['all_pages_but_homepage_soe'];
-  $context_status['stanford_news_extras']
+  }
+  if (isset($db['context_status']['stanford_news_extras'])) {
+    $context_status['stanford_news_extras']
     = $db['context_status']['stanford_news_extras'];
-  $context_status['soe_news'] = $db['context_status']['soe_news'];
-  $context_status['all_pages_but_homepage_jsa']
+  }
+  if (isset($db['context_status']['soe_news'])) {
+    $context_status['soe_news'] = $db['context_status']['soe_news'];
+  }
+  if (isset($db['context_status']['all_pages_but_homepage_jsa'])) {
+    $context_status['all_pages_but_homepage_jsa']
     = $db['context_status']['all_pages_but_homepage_jsa'];
-  $context_status['news_pages'] = $db['context_status']['news_pages'];
-
+  }
+  if (isset($db['context_status']['news_pages'])) {
+    $context_status['news_pages'] = $db['context_status']['news_pages'];
+  }
   variable_set('context_status', $context_status);
   variable_del('stanford_jse_dept_settings');
 }
