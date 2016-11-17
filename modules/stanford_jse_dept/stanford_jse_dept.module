@@ -97,6 +97,7 @@ user/*/edit";
   $css_rules['rule_type'] = CSS_INJECTOR_PAGES_NOTLISTED;
 
   $pass = _css_injector_evaluate_rule($css_rules);
+  /* todo:
   if ($pass) {
     foreach ($file_paths as $file_path) {
 
@@ -110,5 +111,6 @@ user/*/edit";
       $weight = $weight++;
     }
   }
+  */
 
 }
