@@ -36,6 +36,28 @@ function stanford_jse_dept_form_alter(&$form, &$form_state, $form_id) {
  * See stanford_framework_css_alter()
  */
 function stanford_jse_dept_css_alter(&$css) {
+
+  // Exclude admin pages
+  $conditions = "admin
+admin*
+admin/*
+block/*/edit*
+block/add*
+block/*/delete
+node/*/edit
+node/add*
+node/*/delete
+user/*/edit";
+
+  $css_rules = array();
+  $css_rules['rule_conditions'] = $conditions;
+  $css_rules['rule_type'] = CSS_INJECTOR_PAGES_NOTLISTED;
+
+  $pass = _css_injector_evaluate_rule($css_rules);
+  if (!$pass) {
+    return;
+  }
+
   $styles = theme_get_setting('styles');
   $fonts = theme_get_setting('fonts');
 
@@ -78,39 +100,4 @@ function stanford_jse_dept_css_alter(&$css) {
       break;
     default:
   }
-
-  // Exclude admin pages
-  $weight = 9999;
-  $conditions = "admin
-admin*
-admin/*
-block/*/edit*
-block/add*
-block/*/delete
-node/*/edit
-node/add*
-node/*/delete
-user/*/edit";
-
-  $css_rules = array();
-  $css_rules['rule_conditions'] = $conditions;
-  $css_rules['rule_type'] = CSS_INJECTOR_PAGES_NOTLISTED;
-
-  $pass = _css_injector_evaluate_rule($css_rules);
-  /* todo:
-  if ($pass) {
-    foreach ($file_paths as $file_path) {
-
-      drupal_add_css($file_path, array(
-        'type' => 'file',
-        'group' => CSS_THEME,
-        'media' => "all",
-        'preprocess' => TRUE,
-        'weight' => $weight
-      ));
-      $weight = $weight++;
-    }
-  }
-  */
-
 }
