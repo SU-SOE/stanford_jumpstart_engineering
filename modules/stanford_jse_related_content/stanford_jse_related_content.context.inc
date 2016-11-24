@@ -62,9 +62,9 @@ function stanford_jse_related_content_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-d6a08df010339ebc8df9db319eb2052c' => array(
+        'views-2822b14d3cd0fffa732b52003beba914' => array(
           'module' => 'views',
-          'delta' => 'd6a08df010339ebc8df9db319eb2052c',
+          'delta' => '2822b14d3cd0fffa732b52003beba914',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -72,7 +72,7 @@ function stanford_jse_related_content_context_default_contexts() {
           'module' => 'views',
           'delta' => 'b0b97e4fb54df88f280eb220fef1829e',
           'region' => 'sidebar_second',
-          'weight' => '-9',
+          'weight' => '-8',
         ),
         'views-e94fb0374cf38241b08947ca4e210563' => array(
           'module' => 'views',
