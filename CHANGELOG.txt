@@ -1,6 +1,6 @@
 Stanford Engineering
 
-Version 7.x-5.2+29-dev (Department sites)                                    2016-10-19
+Version 7.x-5.2+29-dev (Department sites)                             2016-11-29
 --------------------------------------------------------------------------------
 - Added support for displaying related content
 
