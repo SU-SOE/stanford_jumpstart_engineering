@@ -1,6 +1,6 @@
 Stanford Engineering
 
-Version 7.x-5.2+34-dev (Department sites)                             2016-11-29
+Version 7.x-5.2+34-dev (Department sites)                             2016-11-30
 --------------------------------------------------------------------------------
 - Added css for related content
 
