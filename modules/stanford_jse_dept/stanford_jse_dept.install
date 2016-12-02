@@ -19,16 +19,16 @@ function stanford_jse_dept_enable() {
 
   $db = variable_get('stanford_jse_dept_settings', array());
 
-  // Archive the current settings.
-  $theme_settings = variable_get('theme_stanford_framework_settings', array());
-  $db['fonts'] = $theme_settings['fonts'];
-  $db['styles'] = $theme_settings['styles'];
+  // Archive the current settings. TBD
+  //$theme_settings = variable_get('theme_stanford_framework_settings', array());
+  //$db['fonts'] = $theme_settings['fonts'];
+  //$db['styles'] = $theme_settings['styles'];
 
   // Set the new as default
-  $theme_settings['fonts'] = 'fonts-jse-dept';
-  $theme_settings['styles'] = 'styles-jse-dept';
+  //$theme_settings['fonts'] = 'fonts-jse-dept';
+  //$theme_settings['styles'] = 'styles-jse-dept';
 
-  variable_set('theme_stanford_framework_settings', $theme_settings);
+  //variable_set('theme_stanford_framework_settings', $theme_settings);
 
   // Set the contexts for department sites.
   $context_status = variable_get('context_status', array());
@@ -87,12 +87,12 @@ function stanford_jse_dept_disable() {
 
   $db = variable_get('stanford_jse_dept_settings', array());
 
-  // Reset the theme settings.
-  $theme_settings = variable_get('theme_stanford_framework_settings', array());
-  $theme_settings['fonts'] = $db['fonts'];
-  $theme_settings['styles'] = $db['styles'];
+  // Reset the theme settings. TBD
+  //$theme_settings = variable_get('theme_stanford_framework_settings', array());
+  //$theme_settings['fonts'] = $db['fonts'];
+  //$theme_settings['styles'] = $db['styles'];
 
-  variable_set('theme_stanford_framework_settings', $theme_settings);
+  //variable_set('theme_stanford_framework_settings', $theme_settings);
 
   // Set the contexts for department sites.
   $context_status = variable_get('context_status', array());
