@@ -1,7 +1,7 @@
 Stanford Engineering
 
 
-Version 7.x-5.2+38-dev (Department sites)                             2016-11-30
+Version 7.x-5.2+38-dev (Department sites)                             2016-12-02
 --------------------------------------------------------------------------------
 - Removed setting the default fonts and styles.
 
