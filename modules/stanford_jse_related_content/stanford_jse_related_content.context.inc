@@ -74,11 +74,11 @@ function stanford_jse_related_content_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-8',
         ),
-        'views-e94fb0374cf38241b08947ca4e210563' => array(
+        'views-7c6a569773ec75eec1ddc08609e9c4cf' => array(
           'module' => 'views',
-          'delta' => 'e94fb0374cf38241b08947ca4e210563',
+          'delta' => '7c6a569773ec75eec1ddc08609e9c4cf',
           'region' => 'main_lower',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),
