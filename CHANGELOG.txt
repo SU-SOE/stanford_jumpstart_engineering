@@ -1,6 +1,10 @@
 Stanford Engineering
 
 
+Version 7.x-5.2+42-dev (Department sites)                             2016-12-14
+--------------------------------------------------------------------------------
+- SOE-1511: replace grid four with grid five for related people
+
 Version 7.x-5.2+38-dev (Department sites)                             2016-12-02
 --------------------------------------------------------------------------------
 - Removed setting the default fonts and styles.
