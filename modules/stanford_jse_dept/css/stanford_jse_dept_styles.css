@@ -36,6 +36,7 @@
 
 .navbar .nav > li > a {
     margin-right: 1.2em;
+    padding-bottom: 10px;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav > .active-trail > a {
@@ -158,5 +159,3 @@ ul.pager li.pager-current {
     border-top: 1px solid #d6d6d6;
     background: #fff;
 }
-
-
