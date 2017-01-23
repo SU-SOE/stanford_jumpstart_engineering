@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Installation code for the Stanford Jumpstart Engineering module.
  */
 
 /**
@@ -27,20 +29,94 @@ function stanford_jumpstart_engineering_install() {
  * Implements hook_enable().
  */
 function stanford_jumpstart_engineering_enable() {
-  /*
-   *mymodule_cache_rebuild();
-   */
-  /* Your code here */
+
+  $db = variable_get('stanford_jse_settings', array());
+
+  // Set the contexts for department sites.
+  $context_status = variable_get('context_status', array());
+
+  // Archive the current context settings.
+  if (isset($context_status['stanford_extras_single_region'])) {
+    $db['context_status']['stanford_extras_single_region']
+      = $context_status['stanford_extras_single_region'];
+  }
+  if (isset($context_status['all_pages_but_homepage_soe'])) {
+    $db['context_status']['all_pages_but_homepage_soe']
+      = $context_status['all_pages_but_homepage_soe'];
+  }
+  if (isset($context_status['stanford_news_extras'])) {
+    $db['context_status']['stanford_news_extras']
+      = $context_status['stanford_news_extras'];
+  }
+  if (isset($context_status['soe_news'])) {
+    $db['context_status']['soe_news']
+      = $context_status['soe_news'];
+  }
+  if (isset($context_status['all_pages_but_homepage_jsa'])) {
+    $db['context_status']['all_pages_but_homepage_jsa']
+      = $context_status['all_pages_but_homepage_jsa'];
+  }
+  if (isset($context_status['news_pages'])) {
+    $db['context_status']['news_pages']
+      = $context_status['news_pages'];
+  }
+  if (isset($context_status['news'])) {
+    $db['context_status']['news']
+      = $context_status['news'];
+  }
+
+  // Set the contexts for PICAL sites (disabled=false).
+  $context_status['stanford_extras_single_region'] = FALSE;
+  $context_status['news'] = FALSE;
+  $context_status['news_pages'] = FALSE;
+  $context_status['all_pages_but_homepage_jsa'] = FALSE;
+
+  // Don't set the contexts for SoE (disable=true).
+  $context_status['all_pages_but_homepage_soe'] = TRUE;
+  $context_status['stanford_news_extras'] = TRUE;
+  $context_status['soe_news'] = TRUE;
+
+  variable_set('stanford_jse_settings', $db);
+  variable_set('context_status', $context_status);
+
 }
 
 /**
  * Implements hook_disable().
  */
 function stanford_jumpstart_engineering_disable() {
-  /*
-   *mymodule_cache_rebuild();
-   */
-  /* Your code here */
+  // Set the contexts for department sites.
+  $context_status = variable_get('context_status', array());
+
+  // Revert the contexts.
+  if (isset($db['context_status']['stanford_extras_single_region'])) {
+    $context_status['stanford_extras_single_region']
+      = $db['context_status']['stanford_extras_single_region'];
+  }
+  if (isset($db['context_status']['news'])) {
+    $context_status['news'] = $db['context_status']['news'];
+  }
+  if (isset($db['context_status']['all_pages_but_homepage_soe'])) {
+    $context_status['all_pages_but_homepage_soe']
+      = $db['context_status']['all_pages_but_homepage_soe'];
+  }
+  if (isset($db['context_status']['stanford_news_extras'])) {
+    $context_status['stanford_news_extras']
+      = $db['context_status']['stanford_news_extras'];
+  }
+  if (isset($db['context_status']['soe_news'])) {
+    $context_status['soe_news'] = $db['context_status']['soe_news'];
+  }
+  if (isset($db['context_status']['all_pages_but_homepage_jsa'])) {
+    $context_status['all_pages_but_homepage_jsa']
+      = $db['context_status']['all_pages_but_homepage_jsa'];
+  }
+  if (isset($db['context_status']['news_pages'])) {
+    $context_status['news_pages'] = $db['context_status']['news_pages'];
+  }
+  variable_set('context_status', $context_status);
+  variable_del('stanford_jse_settings');
+
 }
 
 /**

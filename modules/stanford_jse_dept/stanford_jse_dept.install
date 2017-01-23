@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Installation code for Stanford Engineering Department sites.
  */
 
 /**
@@ -63,7 +65,7 @@ function stanford_jse_dept_enable() {
       = $context_status['news'];
   }
 
-  // Set the contexts for department sites
+  // Set the contexts for department sites.
   $context_status['stanford_extras_single_region'] = FALSE;
   $context_status['news'] = FALSE;
   $context_status['news_pages'] = FALSE;
@@ -81,7 +83,7 @@ function stanford_jse_dept_enable() {
 
 /**
  * Implements hook_disable().
- * This restores the previous settings for fonts and styles
+ * This restores the previous settings for fonts and styles.
  */
 function stanford_jse_dept_disable() {
 
