@@ -1,11 +1,15 @@
 Stanford Engineering
 
+Version 7.x-5.3+3-dev                                                       2017-01-25
+--------------------------------------------------------------------------------
+- Update JSE to use News Extras.
+
 Version 7.x-5.3                                                       2017-01-25
 --------------------------------------------------------------------------------
 - Menu padding fix.
 - Calendar and news caption css fixes.
 - Related content exposed filter css fixes.
-- Update JSE to use News Extras.
+
 
 Version 7.x-5.2+42-dev (Department sites)                             2016-12-14
 --------------------------------------------------------------------------------
