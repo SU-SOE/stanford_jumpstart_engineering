@@ -5,6 +5,7 @@ package = Stanford
 version = 7.x-5.3-dev
 project = stanford_jumpstart_engineering
 dependencies[] = stanford_jse_related_content
+dependencies[] = stanford_news_extras
 stylesheets[all][] = css/stanford_jse_dept_related_content.css
 ; scripts[] = js/stanford_module.js
 project status url = https://github.com/SU-SWS/stanford_jumpstart_engineering
