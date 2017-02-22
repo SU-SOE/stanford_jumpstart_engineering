@@ -4,7 +4,11 @@
 Maintainers: [sherakama](https://github.com/sherakama), [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik)
 [Changelog.txt](CHANGELOG.txt)
 
-The Stanford feature provides the custom fonts for department sites
+This Stanford feature updates a JSE site. It:
+* Updates the customize design page with SoE department fonts, styles, and layouts
+* Adds the CSS for the SoE layouts, fonts, and styles
+* Enables [stanford_jse_related_content] (https://github.com/SU-SOE/stanford_jumpstart_engineering/tree/7.x-5.x/modules/stanford_jse_related_content) which adds related content for Stanford page, people, news, and events
+* Replaces Stanford News with Stanford News Extras
 
 Installation
 ---
