@@ -1,5 +1,5 @@
 #[Stanford Jumpstart Engineering](https://github.com/SU-SWS/stanford_jumpstart_engineering)
-##### Version: 7.x-5.3-dev
+##### Version: 7.x-5.4+12-dev 
 
 Maintainers: [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik), and [sherakama](https://github.com/sherakama)
 
@@ -11,7 +11,11 @@ Sub Modules
 ---
 
 **[Stanford Jumpstart Engineering Layouts](https://github.com/SU-SOE/stanford_jumpstart_engineering/tree/7.x-1.x/modules/stanford_jse_layouts)**
-This module provides the sitewide layouts (contexts) for JSE pages.
+This module and it's submodules provide customizations for JSE (PICAL) and JSE Department sites. This includes 
+* Sitewide layouts (contexts) for JSE pages.
+* Related content customizations for JSE sites
+* Department specific font, styles, and layouts
+* News image credit/caption customizations
 
 Installation
 ---

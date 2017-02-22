@@ -1,5 +1,10 @@
 Stanford Jumpstart Engineering
 
+Version 7.x-5.4+12-dev                                                2017-02-22
+--------------------------------------------------------------------------------
+- For JSE sites, this changes the image caption field on news to image caption and credits
+- Deprecates the use of the existing image credits field
+
 Version 7.x-5.3+3-dev                                                       2017-01-25
 --------------------------------------------------------------------------------
 - Update JSE to use News Extras.
