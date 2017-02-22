@@ -8,9 +8,6 @@
  *
  */
 
-
-
-
 /**
  * Implements hook_form_alter().
  */
@@ -27,6 +24,12 @@ function stanford_jse_dept_form_alter(&$form, &$form_state, $form_id) {
     //Add JSE Department Styles
     $form['design_container']['styles']['#options']['styles-jse-dept'] =
       '<span class="design-style ds-jse-dept">' . t('SoE Department') . '</span>';
+  }
+  elseif ($form_id = 'views_exposed_form') {
+    if($form['#id'] === 'views-exposed-form-stanford-news-with-teaser-page-1') {
+      unset($form['field_s_news_categories_tid']);
+      unset($form['#info']['filter-field_s_news_categories_tid']);
+    }
   }
 }
 
@@ -101,3 +104,4 @@ user/*/edit";
     default:
   }
 }
+
