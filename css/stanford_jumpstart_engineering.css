@@ -103,7 +103,7 @@
 @media (max-width: 530px) {
   .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item,
   .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item img {
-    width: 100%;
+    width: 100% !important;
     margin-right: 0 !important;
   }
   .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item:nth-child(3n+0) {
