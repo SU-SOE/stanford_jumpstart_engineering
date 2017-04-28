@@ -13,6 +13,39 @@ function stanford_jse_layouts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'jumpstart_help_page';
+  $context->description = 'Landing page for the Jumpstart Help page';
+  $context->tag = 'Help';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'admin/stanford-jumpstart' => 'admin/stanford-jumpstart',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'stanford_help-stanford_site_specific_help' => array(
+          'module' => 'stanford_help',
+          'delta' => 'stanford_site_specific_help',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Help');
+  t('Landing page for the Jumpstart Help page');
+  $export['jumpstart_help_page'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'sitewide_jse';
   $context->description = 'Sitewide - All pages';
   $context->tag = 'Sitewide';

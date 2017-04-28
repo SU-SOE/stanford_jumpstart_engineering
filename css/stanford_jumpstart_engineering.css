@@ -85,3 +85,28 @@
 .views-grid-four .views-row.views-row-112 {
     margin-right: 0px;
 }
+
+/* LANDING PAGE */
+
+@media (max-width: 1199px) {
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item {
+    width: 48% !important;
+  }
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item:nth-child(3n+0) {
+    margin-right: 3% !important;
+  }
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item:nth-child(2n) {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item,
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item img {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item>.field-items>.field-item:nth-child(3n+0) {
+    margin-right: 0 !important;
+  }
+}

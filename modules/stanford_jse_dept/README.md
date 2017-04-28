@@ -1,11 +1,14 @@
-#Stanford Jumpstart Engineering (JSE) Layouts
+#[Stanford Jumpstart Engineering Department](https://github.com/SU-SWS/stanford_jumpstart_engineering)
 ##### Version: 7.x-5.4-dev
 
-Maintainers: [sherakama](https://github.com/sherakama), [boznik](https://github.com/boznik), and [cjwest](https://github.com/cjwest),
+Maintainers: [sherakama](https://github.com/sherakama), [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik)
 [Changelog.txt](CHANGELOG.txt)
 
-This module provides defines layouts using contexts for JSE.
-
+This Stanford feature updates a JSE site. It:
+* Updates the customize design page with SoE department fonts, styles, and layouts
+* Adds the CSS for the SoE layouts, fonts, and styles
+* Enables [stanford_jse_related_content] (https://github.com/SU-SOE/stanford_jumpstart_engineering/tree/7.x-5.x/modules/stanford_jse_related_content) which adds related content for Stanford page, people, news, and events
+* Replaces Stanford News with Stanford News Extras
 
 Installation
 ---
@@ -15,7 +18,7 @@ Install this module like any other module. [See Drupal Documentation](https://dr
 Configuration
 ---
 
-Nothing special needed.
+This module is dependent on Stanford Framework theme.
 
 Troubleshooting
 ---

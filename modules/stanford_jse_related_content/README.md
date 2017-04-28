@@ -1,10 +1,10 @@
-#Stanford Jumpstart Engineering (JSE) Layouts
+#[Stanford Jumpstart Engineering Related Content](https://github.com/SU-SWS/stanford_jumpstart_engineering)
 ##### Version: 7.x-5.4-dev
 
-Maintainers: [sherakama](https://github.com/sherakama), [boznik](https://github.com/boznik), and [cjwest](https://github.com/cjwest),
+Maintainers: [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik)
 [Changelog.txt](CHANGELOG.txt)
 
-This module provides defines layouts using contexts for JSE.
+The Stanford Jumpstart Engineering Related Content feature is used to add related content to JSE sites. 
 
 
 Installation
