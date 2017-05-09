@@ -34,3 +34,43 @@ function stanford_jumpstart_engineering_form_stanford_news_item_node_form_alter(
   }
 }
 
+/**
+ * Implements preprocess_page().
+ */
+function stanford_jumpstart_engineering_preprocess_page(&$vars) {
+
+  if (!path_is_admin(current_path())) {
+
+    $file_path = drupal_get_path('module', 'stanford_jumpstart_engineering') . '/css/stanford_jumpstart_engineering.css';
+
+    // CSS Injector file weights start at 200.
+    // See http://www.rit.edu/drupal/api/drupal/sites!all!modules!css_injector!css_injector.module/7.43.
+    $weight = 180;
+    $conditions = "admin
+admin*
+admin/*
+block/*/edit*
+block/add*
+block/*/delete
+node/*/edit
+node/add*
+node/*/delete
+user/*/edit";
+
+    $css_rules = array();
+    $css_rules['rule_conditions'] = $conditions;
+    $css_rules['rule_type'] = CSS_INJECTOR_PAGES_NOTLISTED;
+
+    $pass = _css_injector_evaluate_rule($css_rules);
+    if ($pass) {
+
+      drupal_add_css($file_path, array(
+        'type' => 'file',
+        'group' => CSS_THEME,
+        'media' => "all",
+        'preprocess' => TRUE,
+        'weight' => $weight
+      ));
+    }
+  }
+}
