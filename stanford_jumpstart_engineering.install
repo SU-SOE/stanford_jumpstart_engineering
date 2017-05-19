@@ -87,7 +87,8 @@ function stanford_jumpstart_engineering_uninstall() {
 
 /**
  * Implements hook_update_N().
- * This update hook contains the default settings for the module and gets run on hook enable.
+ * This update hook contains the default settings for the module and
+ * runs on hook enable as well as during an upgrade path.
  */
 function stanford_jumpstart_engineering_update_7504() {
 
