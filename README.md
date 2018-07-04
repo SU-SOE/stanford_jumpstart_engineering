@@ -1,4 +1,5 @@
-#[Stanford Jumpstart Engineering](https://github.com/SU-SWS/stanford_jumpstart_engineering)
+# [Stanford Jumpstart Engineering](https://github.com/SU-SWS/stanford_jumpstart_engineering)
+Version: 7.x-6.0-dev
 
 Maintainers: [cjwest](https://github.com/cjwest), [boznik](https://github.com/boznik), and [sherakama](https://github.com/sherakama)
 
@@ -9,7 +10,7 @@ The Stanford Engineering feature contains code for the JSE product. Current it i
 Sub Modules
 ---
 
-**[Stanford Jumpstart Engineering Layouts](https://github.com/SU-SOE/stanford_jumpstart_engineering/tree/7.x-1.x/modules/stanford_jse_layouts)**
+**[Stanford Jumpstart Engineering Layouts](https://github.com/SU-SOE/stanford_jumpstart_engineering/tree/7.x-6.x/modules/stanford_jse_layouts)**
 This module and its submodules provide customizations for JSE (PICAL) and JSE Department sites. This includes
 * Sitewide layouts (contexts) for JSE pages.
 * Related content customizations for JSE sites
